@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node server.js",
-    "client": "node web-server.js"
+    "server": "nohup node server.js > ./server.log 2>&1 &",
+    "client": "nohup node web-server.js > ./web.log 2>&1 &"
   },
   "author": "jeremie payet",
   "license": "ISC",
